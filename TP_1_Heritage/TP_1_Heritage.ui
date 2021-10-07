@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TP_1_HeritageClass</class>
+ <widget class="QMainWindow" name="TP_1_HeritageClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>TP_1_Heritage</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QPushButton" name="tirede">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>80</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Lancer le dé</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="affiche">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>150</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Affiche la valeur du dé</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="zero">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>220</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string> Remise à zéro du score</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="total">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>30</y>
+      <width>151</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Score Total</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="score">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>120</y>
+      <width>151</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="de">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>260</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>600</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="TP_1_Heritage.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>tirede</sender>
+   <signal>clicked()</signal>
+   <receiver>TP_1_HeritageClass</receiver>
+   <slot>lancede()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>120</x>
+     <y>133</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>299</x>
+     <y>199</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>zero</sender>
+   <signal>clicked()</signal>
+   <receiver>TP_1_HeritageClass</receiver>
+   <slot>remisezero()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>120</x>
+     <y>273</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>299</x>
+     <y>199</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>total</sender>
+   <signal>clicked()</signal>
+   <receiver>TP_1_HeritageClass</receiver>
+   <slot>scoretotal()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>415</x>
+     <y>93</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>299</x>
+     <y>199</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>affiche</sender>
+   <signal>clicked()</signal>
+   <receiver>TP_1_HeritageClass</receiver>
+   <slot>affichevaleur()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>120</x>
+     <y>203</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>299</x>
+     <y>199</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>lancede()</slot>
+  <slot>scoretotal()</slot>
+  <slot>affichevaleur()</slot>
+  <slot>remisezero()</slot>
+ </slots>
+</ui>
