@@ -16,7 +16,6 @@ private:
 
 public slots:
 	void lancede();
-	void scoretotal();
-	void affichevaleur();
+	void scoretotal(int dd);
 	void remisezero();
 };
