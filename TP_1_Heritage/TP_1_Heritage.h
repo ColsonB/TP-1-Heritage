@@ -12,11 +12,11 @@ public:
 
 private:
     Ui::TP_1_HeritageClass ui;
-	int dd;
 	int n;
+	int dd;
 
 public slots:
 	void lancede();
-	void scoretotal(int n);
+	void scoretotal(int dd);
 	void remisezero();
 };
