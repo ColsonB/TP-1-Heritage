@@ -22,6 +22,7 @@ void TP_1_Heritage::scoretotal(int dd)
 
 void TP_1_Heritage::remisezero()
 {
+	int n = NULL;
 	ui.score->setText(QLocale().toString(n));
 }
 
