@@ -88,12 +88,12 @@
     <QtRcc Include="TP_1_Heritage.qrc" />
     <QtUic Include="TP_1_Heritage.ui" />
     <QtMoc Include="TP_1_Heritage.h" />
-    <ClCompile Include="de.cpp" />
+    <ClCompile Include="dd.cpp" />
     <ClCompile Include="TP_1_Heritage.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <QtMoc Include="de.h" />
+    <QtMoc Include="dd.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

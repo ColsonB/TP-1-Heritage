@@ -40,12 +40,12 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="de.cpp">
+    <ClCompile Include="dd.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <QtMoc Include="de.h">
+    <QtMoc Include="dd.h">
       <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>
