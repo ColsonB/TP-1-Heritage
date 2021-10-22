@@ -1,24 +1,21 @@
 #include "de.h"
 
-void de::lancede()
+de::de() 
 {
-	TP_1_Heritage::lancede();
-	dd = rand() % 6 + 1; // Permet d'avoir un nombre aléatoire compris entre 1 et 6
-	ui.de->setText(QLocale().toString(dd));
 
-	TP_1_Heritage::scoretotal(dd);
 }
 
-void de::scoretotal(int dd)
+de::de(int n) 
 {
-	TP_1_Heritage::scoretotal(dd);
-	this->n += dd;
-	ui.score->setText(QLocale().toString(this->n));
+
 }
 
-void de::remisezero()
+void de::operator++(int)
 {
-	TP_1_Heritage::remisezero();
-	n = NULL;
-	ui.score->setText(QLocale().toString(n));
+
+}
+
+void operator+=(int n, de & de)
+{
+
 }

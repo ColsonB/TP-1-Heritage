@@ -6,15 +6,11 @@ class de : public TP_1_Heritage
 
 public:
 	de(QWidget *parent = Q_NULLPTR);
-
-private:
-	Ui::TP_1_HeritageClass ui;
-	int dd;
-	int n;
-
-public slots:
-	void lancede();
-	void scoretotal(int dd);
-	void remisezero();
+	de();
+	de(int n);
+	int valde;
+	int valtotal;
+	void operator++(int);
+	friend void operator+=(int n, de & de);
 };
 
