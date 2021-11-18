@@ -1,8 +1,9 @@
 #include "dd.h"
+#include "TP_1_Heritage.h"
 
 dd::dd()
 {
-
+	this->valde;
 }
 
 dd::dd(int n)
@@ -17,5 +18,10 @@ void dd::operator++(int)
 
 void operator+=(int n, dd & de)
 {
+	n = de.valde;
+}
 
+void operator<(int n, dd &dd)
+{
+	n = dd.scoretotal;
 }

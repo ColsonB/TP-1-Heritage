@@ -45,8 +45,8 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <QtMoc Include="dd.h">
+    <ClInclude Include="dd.h">
       <Filter>Header Files</Filter>
-    </QtMoc>
+    </ClInclude>
   </ItemGroup>
 </Project>
