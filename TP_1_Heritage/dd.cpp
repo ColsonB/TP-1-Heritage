@@ -4,7 +4,7 @@
 
 dd::dd()
 {
-	this->ValDe;
+	this->ValDe = 0;
 }
 
 dd::dd(int n)
@@ -21,6 +21,7 @@ int dd::LancerDe()
 
 void dd::operator++(int)
 {
+	int ValDe = LancerDe();
 	ScoreTotal += ValDe;
 }
 

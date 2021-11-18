@@ -210,7 +210,7 @@
  <slots>
   <slot>LanceDe()</slot>
   <slot>ScoreTotal()</slot>
-  <slot>AfficheValeur()</slot>
+  <slot>AfficheScore()</slot>
   <slot>RemiseZero()</slot>
  </slots>
 </ui>

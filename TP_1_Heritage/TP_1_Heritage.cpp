@@ -9,7 +9,13 @@ TP_1_Heritage::TP_1_Heritage(QWidget *parent)
 
 void TP_1_Heritage::LanceDe()
 {
+	(*de)++;
+
 	TP_1_Heritage::Score();
+	TP_1_Heritage::AfficheScore();
+
+	this->n += (*de);
+	this->n < (*de);
 }
 
 void TP_1_Heritage::ScoreTotal()
@@ -27,6 +33,7 @@ void TP_1_Heritage::RemiseZero()
 void TP_1_Heritage::Score()
 {
 	this->n < (*de);
+
 	QString QScoreTotal = QString::number(this->n);
 	ui.de->setText(QScoreTotal);
 }
@@ -34,6 +41,7 @@ void TP_1_Heritage::Score()
 void TP_1_Heritage::AfficheScore()
 {
 	this->n += (*de);
+
 	QString QScore = QString::number(this->n);
 	ui.de->setText(QScore);
 }
