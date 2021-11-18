@@ -2,13 +2,17 @@
 
 class dd
 {
+	
+private :
+	
+	int LancerDe();
+	int ValDe;
+	int ScoreTotal = 0;
 
-	public:
+public:
 
 	dd();
 	dd(int n);
-	int valde;
-	int valtotal;
 	void operator++(int);
 	friend void operator+=(int n, dd & de);
 	friend void operator<(int n, dd &dd);

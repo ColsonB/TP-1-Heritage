@@ -7,26 +7,33 @@ TP_1_Heritage::TP_1_Heritage(QWidget *parent)
 	ui.setupUi(this);
 }
 
-void TP_1_Heritage::lancede()
+void TP_1_Heritage::LanceDe()
 {
-	TP_1_Heritage::score();
+	TP_1_Heritage::Score();
 }
 
-void TP_1_Heritage::scoretotal()
+void TP_1_Heritage::ScoreTotal()
 {
 	this->n += *de; // Rajoute la valeur de dd dans n
 	ui.score->setText(QLocale().toString(this->n));
 }
 
-void TP_1_Heritage::remisezero()
+void TP_1_Heritage::RemiseZero()
 {
 	n = NULL; // Mets la valeur de n à 0
 	ui.score->setText(QLocale().toString(n));
 }
 
-void TP_1_Heritage::score()
+void TP_1_Heritage::Score()
 {
 	this->n < (*de);
-	QString ScoreTotal = QString::number(this->n);
-	ui.de->setText(ScoreTotal);
+	QString QScoreTotal = QString::number(this->n);
+	ui.de->setText(QScoreTotal);
+}
+
+void TP_1_Heritage::AfficheScore()
+{
+	this->n += (*de);
+	QString QScore = QString::number(this->n);
+	ui.de->setText(QScore);
 }

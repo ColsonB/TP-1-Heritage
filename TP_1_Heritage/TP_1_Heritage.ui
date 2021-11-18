@@ -208,9 +208,9 @@
   </connection>
  </connections>
  <slots>
-  <slot>lancede()</slot>
-  <slot>scoretotal()</slot>
-  <slot>affichevaleur()</slot>
-  <slot>remisezero()</slot>
+  <slot>LanceDe()</slot>
+  <slot>ScoreTotal()</slot>
+  <slot>AfficheValeur()</slot>
+  <slot>RemiseZero()</slot>
  </slots>
 </ui>

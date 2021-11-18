@@ -9,17 +9,20 @@ class TP_1_Heritage : public QMainWindow
     Q_OBJECT
 
 public:
+
     TP_1_Heritage(QWidget *parent = Q_NULLPTR);
 
 private:
+
     Ui::TP_1_HeritageClass ui;
 	int n;
 	dd *de;
 	
-
 public slots:
-	void lancede();
-	void scoretotal();
-	void remisezero();
-	void score();
+
+	void LanceDe();
+	void ScoreTotal();
+	void RemiseZero();
+	void Score();
+	void AfficheScore();
 };

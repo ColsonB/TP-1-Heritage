@@ -1,27 +1,35 @@
 #include "dd.h"
-#include "TP_1_Heritage.h"
+#include <stdlib.h>
+#include <qRandomGenerator>
 
 dd::dd()
 {
-	this->valde;
+	this->ValDe;
 }
 
 dd::dd(int n)
 {
+	this->ValDe = n;
+}
 
+int dd::LancerDe()
+{
+	int ValDe = QRandomGenerator::global()->bounded(1, 7);
+	this->ValDe = ValDe;
+	return ValDe;
 }
 
 void dd::operator++(int)
 {
-	valtotal = rand() % 6 + 1; // Permet d'avoir un nombre aléatoire compris entre 1 et 6
+	ScoreTotal += ValDe;
 }
 
 void operator+=(int n, dd & de)
 {
-	n = de.valde;
+	n = de.ValDe;
 }
 
 void operator<(int n, dd &dd)
 {
-	n = dd.scoretotal;
+	n = dd.ScoreTotal;
 }
