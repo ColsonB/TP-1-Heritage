@@ -13,4 +13,3 @@ public:
 	void operator++(int);
 	friend void operator+=(int n, dd & de);
 };
-
