@@ -1,3 +1,6 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include <qDebug>
 #include "TP_1_Heritage.h"
 #include "dd.h"
 
@@ -5,43 +8,37 @@ TP_1_Heritage::TP_1_Heritage(QWidget *parent)
 	: QMainWindow(parent)
 {
 	ui.setupUi(this);
+	de = new dd();
 }
 
 void TP_1_Heritage::LanceDe()
 {
 	(*de)++;
 
-	TP_1_Heritage::Score();
-	TP_1_Heritage::AfficheScore();
+	TP_1_Heritage::AfficheValeurDe();
 
 	this->n += (*de);
+	qDebug() << this->n;
 	this->n < (*de);
 }
 
-void TP_1_Heritage::ScoreTotal()
+void TP_1_Heritage::AfficheValeurDe()
 {
-	this->n += *de; // Rajoute la valeur de dd dans n
-	ui.score->setText(QLocale().toString(this->n));
+	this->n += (*de);
+
+	QString Score = QString::number(this->n);
+	ui.de->setText(Score);
 }
 
 void TP_1_Heritage::RemiseZero()
 {
-	n = NULL; // Mets la valeur de n à 0
-	ui.score->setText(QLocale().toString(n));
-}
-
-void TP_1_Heritage::Score()
-{
-	this->n < (*de);
-
-	QString QScoreTotal = QString::number(this->n);
-	ui.de->setText(QScoreTotal);
+	(*de)=(0); // Mets la valeur de n à 0
 }
 
 void TP_1_Heritage::AfficheScore()
 {
-	this->n += (*de);
+	this->n < (*de);
 
-	QString QScore = QString::number(this->n);
-	ui.de->setText(QScore);
+	QString ScoreTotal = QString::number(this->n);
+	ui.score->setText(ScoreTotal);
 }

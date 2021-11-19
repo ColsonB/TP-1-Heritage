@@ -146,7 +146,7 @@
    <sender>tirede</sender>
    <signal>clicked()</signal>
    <receiver>TP_1_HeritageClass</receiver>
-   <slot>lancede()</slot>
+   <slot>LanceDe()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>120</x>
@@ -162,7 +162,7 @@
    <sender>zero</sender>
    <signal>clicked()</signal>
    <receiver>TP_1_HeritageClass</receiver>
-   <slot>remisezero()</slot>
+   <slot>RemiseZero()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>120</x>
@@ -178,7 +178,7 @@
    <sender>total</sender>
    <signal>clicked()</signal>
    <receiver>TP_1_HeritageClass</receiver>
-   <slot>scoretotal()</slot>
+   <slot>AfficheScore()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>415</x>
@@ -194,7 +194,7 @@
    <sender>affiche</sender>
    <signal>clicked()</signal>
    <receiver>TP_1_HeritageClass</receiver>
-   <slot>affichevaleur()</slot>
+   <slot>AfficheValeurDe()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>120</x>
@@ -212,5 +212,6 @@
   <slot>ScoreTotal()</slot>
   <slot>AfficheScore()</slot>
   <slot>RemiseZero()</slot>
+  <slot>AfficheValeurDe()</slot>
  </slots>
 </ui>

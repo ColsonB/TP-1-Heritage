@@ -1,36 +1,29 @@
 #include "dd.h"
 #include <stdlib.h>
-#include <qRandomGenerator>
 
 dd::dd()
 {
-	this->ValDe = 0;
+	ScoreTotal = 0;
+	(*this)++;
 }
 
 dd::dd(int n)
 {
-	this->ValDe = n;
-}
-
-int dd::LancerDe()
-{
-	int ValDe = QRandomGenerator::global()->bounded(1, 7);
-	this->ValDe = ValDe;
-	return ValDe;
+	ValDe = n;
 }
 
 void dd::operator++(int)
 {
-	int ValDe = LancerDe();
+	ValDe = rand() % 6 + 1;
 	ScoreTotal += ValDe;
 }
 
-void operator+=(int n, dd & de)
+void operator+=(int &n, dd & dd)
 {
-	n = de.ValDe;
+	n = dd.ValDe;
 }
 
-void operator<(int n, dd &dd)
-{
+void operator<(int &n, dd &dd)
+{ 
 	n = dd.ScoreTotal;
 }

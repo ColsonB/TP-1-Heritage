@@ -21,8 +21,7 @@ private:
 public slots:
 
 	void LanceDe();
-	void ScoreTotal();
 	void RemiseZero();
-	void Score();
 	void AfficheScore();
+	void AfficheValeurDe();
 };
