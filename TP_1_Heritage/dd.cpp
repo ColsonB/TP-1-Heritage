@@ -4,6 +4,7 @@
 dd::dd()
 {
 	ScoreTotal = 0;
+	DeLancer = 0;
 	(*this)++;
 }
 
@@ -16,7 +17,14 @@ void dd::operator++(int)
 {
 	ValDe = rand() % 6 + 1;
 	ScoreTotal += ValDe;
+	DeLancer = DeLancer++;
 }
+
+void dd::operator=(int& value)
+{
+	this->ScoreTotal = value;
+}
+
 
 void operator+=(int &n, dd & dd)
 {

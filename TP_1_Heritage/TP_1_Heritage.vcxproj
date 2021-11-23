@@ -89,11 +89,13 @@
     <QtUic Include="TP_1_Heritage.ui" />
     <QtMoc Include="TP_1_Heritage.h" />
     <ClCompile Include="dd.cpp" />
+    <ClCompile Include="DeHisto.cpp" />
     <ClCompile Include="TP_1_Heritage.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="dd.h" />
+    <ClInclude Include="DeHisto.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
